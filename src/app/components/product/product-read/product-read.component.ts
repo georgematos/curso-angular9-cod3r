@@ -11,14 +11,22 @@ export class ProductReadComponent implements OnInit {
 
   produtos: Product[];
   displayedColumns = ["id", "name", "price", "actions"];
+  dialogTitle = "Deseja excluir este produto?";
 
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
   ) { }
 
   ngOnInit(): void {
     this.productService.read().subscribe((response) => {
       this.produtos = response;
+    })
+  }
+
+  delete(id: string): void {
+    this.productService.delete(id).subscribe((response) => {
+      this.ngOnInit();
+      this.productService.showMessage("Produto excluído com sucesso!");
     })
   }
 

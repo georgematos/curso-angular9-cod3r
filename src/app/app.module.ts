@@ -50,7 +50,7 @@ registerLocaleData(locatePt);
     ProductCreateComponent,
     ProductReadComponent,
     ProductReadTableschematicsComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,
