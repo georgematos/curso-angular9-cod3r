@@ -1,10 +1,5 @@
 table {
   width: 100%;
-
-}
-
-.icons {
-  margin-right: 10px;
 }
 
 i.edit {
@@ -13,4 +8,8 @@ i.edit {
 
 i.delete {
   color: #e35e6b;
+}
+
+button {
+  margin-right: 10px;
 }

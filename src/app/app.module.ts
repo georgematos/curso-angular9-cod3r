@@ -35,7 +35,7 @@ import { ProductReadTableschematicsComponent } from './components/product/produc
 
 import locatePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
-import { DialogBodyComponent } from './components/dialog-body/dialog-body.component';
+import { DialogBodyComponent } from './components/product/product-read/dialog-body/dialog-body.component';
 
 registerLocaleData(locatePt);
 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Product } from '../product.model';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { DialogBodyComponent } from '../../dialog-body/dialog-body.component';
+import { DialogBodyComponent } from './dialog-body/dialog-body.component';
 
 @Component({
   selector: 'app-product-read',

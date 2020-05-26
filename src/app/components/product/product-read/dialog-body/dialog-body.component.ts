@@ -2,8 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
-import { ProductService } from '../product/product.service';
-import { Product } from '../product/product.model';
+import { ProductService } from '../../../product/product.service';
 
 @Component({
   selector: 'app-dialog-body',
@@ -16,7 +15,7 @@ export class DialogBodyComponent implements OnInit {
     public dialogRef: MatDialogRef<DialogBodyComponent>,
     private productService: ProductService,
     
-    @Inject(MAT_DIALOG_DATA) 
+    @Inject(MAT_DIALOG_DATA)
     public data: any
   ) { }
 
